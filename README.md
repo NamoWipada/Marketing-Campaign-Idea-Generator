@@ -69,6 +69,8 @@ Chatbot นี้จะช่วยลดเวลาและความซั
 
 - **Digital Opportunity**: ปลดล็อกโอกาสธุรกิจผ่านเทคโนโลยี  
 - **Growth through Innovation**: ใช้นวัตกรรมเพื่อสร้างผลลัพธ์ที่เหนือกว่า  
-- **Sustainable Impact**: สร้างผลลัพธ์ที่ยั่งยืนต่อองค์กรและลูกค้า  
+- **Sustainable Impact**: สร้างผลลัพธ์ที่ยั่งยืนต่อองค์กรและลูกค้า
+
+Path: \Users\User\OneDrive\Desktop\NamoChatbot\Marketing-Campaign-Idea-Generator
 
 
