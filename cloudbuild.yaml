@@ -1,0 +1,53 @@
+steps:
+  # steps 0:  แค่ลอง Test Job 
+  - name: 'python:3.12'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "CI/CD pipeline running successfully"
+
+  # steps 1: สร้าง Docker Img
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'build-docker-image'
+    args: ['build', '-t', 'mars-idea-generator', '.']
+
+  #  steps 2: ทำ Tag Docker Image
+  - name: 'gcr.io/cloud-builders/docker'
+    id: "tag-docker-image"
+    waitFor: ['build-docker-image']
+    args: ['tag', 'mars-idea-generator', 'gcr.io/marsideagenerator/mars-idea-generator:latest']
+    
+
+
+  # steps 3: Push Docker Image to GCR
+  - name: 'gcr.io/cloud-builders/docker'
+    id: "push-docker-image"
+    waitFor: ['tag-docker-image']
+    args: ['push', 'gcr.io/marsideagenerator/mars-idea-generator:latest']
+
+
+  # steps 4: Deploy ไปที่ Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    id: "deploy-sit-cloud-run"
+    waitFor: ['push-docker-image']
+    args:
+      - gcloud
+      - run
+      - deploy
+      - mars-idea-generator-sit 
+      - --image
+      - gcr.io/marsideagenerator/mars-idea-generator:latest
+      - --platform
+      - managed
+      - --region
+      - asia-southeast1
+      - --allow-unauthenticated
+      - --project
+      - marsideagenerator  
+
+
+options:
+  logging: CLOUD_LOGGING_ONLY 
+  machineType: 'E2_HIGHCPU_8'
+

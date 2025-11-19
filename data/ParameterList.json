@@ -1,0 +1,54 @@
+{
+  "industries": [
+    "F&B",
+    "Telecom",
+    "Corporate",
+    "Government",
+    "Tech",
+    "HR",
+    "Finance",
+    "Event"
+  ],
+  "campaign_objectives": [
+    "Awareness",
+    "Conversion",
+    "Lead Generation",
+    "Brand Engagement",
+    "Innovation"
+  ],
+  "target_audiences": [
+      "Gen Z",
+      "Millennials",
+      "Gen X",
+      "Baby Boomers",
+      "Working Professionals",
+      "Students",
+      "Stay-at-home",
+      "Entrepreneurs / Small Business Owners",
+      "Elderly / Retired"
+  ],
+  "budget_ranges": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "channels_preferences": [
+    "Digital",
+    "Social",
+    "Mobile",
+    "Metaverse",
+    "Event"
+  ],
+  "example_input": {
+    "industry": "F&B",
+    "campaign_objective": "Brand Engagement",
+    "target_audience": "Gen Z",
+    "budget_range": "High",
+    "channels_preference": ["Social", "Mobile"],
+
+    "mood_tone": "Playful, vibrant, colorful",
+    "topic": "Cold Brew Summer Festival"
+  }
+}
+
+

@@ -1,0 +1,39 @@
+{
+  "campaign_name": "Fresh Delight Summer Promo",
+  "industry": "F&B",
+  "objective": "Awareness",
+  "target_audience": {
+    "age": "18-35",
+    "gender": "All",
+    "persona": "Young urban professionals, health-conscious"
+  },
+  "budget": "Medium",
+  "channels": ["Social Media", "Mobile App", "In-store POS"],
+  "customer_insight": "ลูกค้าอยากได้เครื่องดื่มสดชื่นในช่วงหน้าร้อนและไม่อยากเสียเวลารอ",
+  "big_idea": "Experience Summer Freshness Instantly",
+  "creative_executions": {
+    "key_message": "สดชื่นทุกเวลา, ทุกที่",
+    "content_pillars": ["Video", "Instagram Stories", "Interactive Quiz"],
+    "sample_ads": ["Instagram Reel: How to make your perfect summer drink"],
+    "hook_cta": "Try now & share your experience!"
+  },
+  "media_strategy": {
+    "phase_1": {"channel": "Instagram", "objective": "Engagement"},
+    "phase_2": {"channel": "Facebook + App Push", "objective": "Conversion"}
+  },
+  "kpi_measurement": {
+    "reach": 50000,
+    "ctr": 5,
+    "conversion": 1000
+  },
+  "phase_roadmap": {
+    "phase_1": "Pilot - Awareness",
+    "phase_2": "Scale - Conversion",
+    "decision_point": "After 2 weeks, optimize creatives based on CTR"
+  },
+  "risk_mitigation": {
+    "risks": ["Content engagement low", "Budget overshoot"],
+    "mitigation": ["Adjust creatives", "Reallocate budget"]
+  },
+  "source": "Internal / External URL or Dataset Reference"
+}
